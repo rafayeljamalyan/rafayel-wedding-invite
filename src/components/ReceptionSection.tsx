@@ -18,15 +18,15 @@ export default function ReceptionSection() {
                 />
               </div>
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] min-w-full not-italic relative shrink-0 text-[#332d27] text-[24px] w-[min-content]">
-                Պատվարտային արարողությունը՝
+                Պսակադրության արարողությունը՝
               </p>
             </div>
             <div className="flex flex-col gap-[16px] items-start not-italic relative shrink-0 w-full">
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
-                Ուկենավաժ գինու գործարան (Voskevaz winery)
+                Ոսկեվազ գինու գործարան (Voskevaz winery)
               </p>
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Հայաստան, 0220, Արագածոտնի մարզ, Ոսկևազ գյուղ
+                Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
               </p>
             </div>
           </div>
@@ -59,15 +59,15 @@ export default function ReceptionSection() {
                 />
               </div>
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] min-w-full not-italic relative shrink-0 text-[#332d27] text-[24px] w-[min-content]">
-                Պատվարտային արարողությունը՝
+                Պսակադրության արարողությունը՝
               </p>
             </div>
             <div className="flex flex-col gap-[16px] items-start not-italic relative shrink-0 w-full">
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
-                Ուկենավաժ գինու գործարան (Voskevaz winery)
+                Ոսկեվազ գինու գործարան (Voskevaz winery)
               </p>
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Հայաստան, 0220, Արագածոտնի մարզ, Ոսկևազ գյուղ
+                Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
               </p>
             </div>
           </div>
@@ -99,15 +99,15 @@ export default function ReceptionSection() {
               />
             </div>
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] min-w-full not-italic relative shrink-0 text-[#332d27] text-[20px] w-[min-content]">
-              Պատվարտային արարողությունը՝
+              Պսակադրության արարողությունը՝
             </p>
           </div>
           <div className="flex flex-col gap-[16px] items-start not-italic relative shrink-0 w-full">
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
-              Ուկենավաժ գինու գործարան (Voskevaz winery)
+              Ոսկեվազ գինու գործարան (Voskevaz winery)
             </p>
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Հայաստան, 0220, Արագածոտնի մարզ, Ոսկևազ գյուղ
+              Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
             </p>
           </div>
         </div>
@@ -151,15 +151,15 @@ export default function ReceptionSection() {
               />
             </div>
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] min-w-full not-italic relative shrink-0 text-[#332d27] text-[20px] w-[min-content]">
-              Պատվարտային արարողությունը՝
+              Պսակադրության արարողությունը՝
             </p>
           </div>
           <div className="flex flex-col gap-[16px] items-start not-italic relative shrink-0 w-full">
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] relative shrink-0 text-[#110c09] text-[32px] w-full">
-              Ուկենավաժ գինու գործարան (Voskevaz winery)
+              Ոսկեվազ գինու գործարան (Voskevaz winery)
             </p>
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Հայաստան, 0220, Արագածոտնի մարզ, Ոսկևազ գյուղ
+              Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
             </p>
           </div>
         </div>

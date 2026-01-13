@@ -20,7 +20,7 @@ export default function DetailsSection() {
           <div className="basis-0 bg-white flex flex-col gap-[64px] grow h-full items-start justify-center min-h-px min-w-px pl-[120px] pr-[160px] py-[80px] relative shrink-0">
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային օր՝
+                Պսակադրության օր՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
                 28.03.2026
@@ -28,7 +28,7 @@ export default function DetailsSection() {
             </div>
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային ժամ՝
+                Պսակադրության ժամ՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
                 15:30
@@ -36,7 +36,7 @@ export default function DetailsSection() {
             </div>
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային վայր՝
+                Պսակադրության վայր՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
                 Սուրբ Գևորգ Եկեղեցի, Մուղնի
@@ -63,7 +63,7 @@ export default function DetailsSection() {
           <div className="basis-0 bg-white flex flex-col gap-[64px] grow h-full items-start justify-center min-h-px min-w-px p-[80px] relative shrink-0">
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային օր՝
+                Պսակադրության օր՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
                 28.03.2026
@@ -71,7 +71,7 @@ export default function DetailsSection() {
             </div>
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային ժամ՝
+                Պսակադրության ժամ՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
                 15:30
@@ -79,7 +79,7 @@ export default function DetailsSection() {
             </div>
             <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[#332d27] text-[24px] w-full">
-                Պատվարտային վայր՝
+                Պսակադրության վայր՝
               </p>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
                 Սուրբ Գևորգ Եկեղեցի, Մուղնի
@@ -94,7 +94,7 @@ export default function DetailsSection() {
         <div className="bg-white flex flex-col gap-[56px] items-start justify-center px-[40px] py-[80px] relative shrink-0 w-full">
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային օր՝
+              Պսակադրության օր՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
               28.03.2026
@@ -102,7 +102,7 @@ export default function DetailsSection() {
           </div>
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային ժամ՝
+              Պսակադրության ժամ՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[56px] relative shrink-0 text-[#110c09] text-[48px] w-full">
               15:30
@@ -110,7 +110,7 @@ export default function DetailsSection() {
           </div>
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային վայր՝
+              Պսակադրության վայր՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
               Սուրբ Գևորգ Եկեղեցի, Մուղնի
@@ -148,7 +148,7 @@ export default function DetailsSection() {
         <div className="bg-white flex flex-col gap-[40px] items-start justify-center px-[20px] py-[64px] relative shrink-0 w-full">
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային օր՝
+              Պսակադրության օր՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
               28.03.2026
@@ -156,7 +156,7 @@ export default function DetailsSection() {
           </div>
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային ժամ՝
+              Պսակադրության ժամ՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] relative shrink-0 text-[#110c09] text-[40px] w-full">
               15:30
@@ -164,7 +164,7 @@ export default function DetailsSection() {
           </div>
           <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] relative shrink-0 text-[#332d27] text-[20px] w-full">
-              Պատվարտային վայր՝
+              Պսակադրության վայր՝
             </p>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] relative shrink-0 text-[#110c09] text-[32px] w-full">
               Սուրբ Գևորգ Եկեղեցի, Մուղնի
