@@ -36,7 +36,7 @@ export default function ReceptionSection() {
             <Image
               alt="Voskevaz Winery"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/winery-image.png"
+              src="/winery-image.jpg"
               width={640}
               height={720}
             />
@@ -77,7 +77,7 @@ export default function ReceptionSection() {
             <Image
               alt="Voskevaz Winery"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/winery-image.png"
+              src="/winery-image.jpg"
               width={640}
               height={720}
             />
@@ -117,7 +117,7 @@ export default function ReceptionSection() {
               <Image
                 alt=""
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/winery-image.png"
+                src="/winery-image.jpg"
                 width={640}
                 height={720}
               />
@@ -128,7 +128,7 @@ export default function ReceptionSection() {
               <Image
                 alt="Voskevaz Winery"
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/winery-image.png"
+                src="/winery-image.jpg"
                 width={520}
                 height={600}
               />
@@ -169,7 +169,7 @@ export default function ReceptionSection() {
               <Image
                 alt=""
                 className="block max-w-none size-full object-cover"
-                src="/winery-image-blurred.png"
+                src="/winery-image-blurred.jpg"
                 width={520}
                 height={582}
               />
@@ -179,7 +179,7 @@ export default function ReceptionSection() {
             <Image
               alt="Voskevaz Winery"
               className="block max-w-none size-full object-cover"
-              src="/winery-image-mobile.png"
+              src="/winery-image.jpg"
               width={400}
               height={462}
             />
