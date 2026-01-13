@@ -9,7 +9,7 @@ export default function RSVPSection() {
           <Image
             alt=""
             className="absolute inset-0 max-w-none object-cover size-full"
-            src="/rsvp-bg.png"
+            src="/rsvp-bg.jpg"
             fill
             style={{ objectPosition: "50% 50%" }}
           />
