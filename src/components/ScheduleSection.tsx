@@ -10,7 +10,7 @@ export default function ScheduleSection() {
             <Image
               alt="Schedule"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/schedule-image.png"
+              src="/schedule-image.jpg"
               width={640}
               height={720}
             />
@@ -86,7 +86,7 @@ export default function ScheduleSection() {
             <Image
               alt="Schedule"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/schedule-image.png"
+              src="/schedule-image.jpg"
               width={640}
               height={720}
             />
@@ -222,7 +222,7 @@ export default function ScheduleSection() {
               <Image
                 alt=""
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/schedule-image.png"
+                src="/schedule-image.jpg"
                 width={640}
                 height={720}
               />
@@ -233,7 +233,7 @@ export default function ScheduleSection() {
               <Image
                 alt="Schedule"
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/schedule-image.png"
+                src="/schedule-image.jpg"
                 width={520}
                 height={600}
               />
@@ -309,7 +309,7 @@ export default function ScheduleSection() {
               <Image
                 alt=""
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/schedule-image.png"
+                src="/schedule-image.jpg"
                 width={640}
                 height={720}
               />
@@ -320,7 +320,7 @@ export default function ScheduleSection() {
               <Image
                 alt="Schedule"
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/schedule-image.png"
+                src="/schedule-image.jpg"
                 width={400}
                 height={462}
               />
