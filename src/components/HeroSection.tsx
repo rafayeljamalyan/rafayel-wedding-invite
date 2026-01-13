@@ -48,7 +48,7 @@ export default function HeroSection() {
             <Image
               alt="Wedding couple in Paris"
               className="absolute h-[118.52%] left-0 max-w-none top-[-12.81%] w-full"
-              src="/wedding-couple.png"
+              src="/wedding-couple.jpg"
               width={640}
               height={853}
             />
@@ -101,7 +101,7 @@ export default function HeroSection() {
             <Image
               alt="Wedding couple in Paris"
               className="absolute h-[118.52%] left-0 max-w-none top-[-12.81%] w-full"
-              src="/wedding-couple.png"
+              src="/wedding-couple.jpg"
               width={640}
               height={853}
             />
@@ -153,7 +153,7 @@ export default function HeroSection() {
               <Image
                 alt=""
                 className="absolute h-[118.52%] left-0 max-w-none top-[-12.81%] w-full"
-                src="/wedding-couple.png"
+                src="/wedding-couple.jpg"
                 width={640}
                 height={853}
               />
@@ -164,7 +164,7 @@ export default function HeroSection() {
               <Image
                 alt="Wedding couple in Paris"
                 className="absolute h-[118.52%] left-0 max-w-none top-[-12.81%] w-full"
-                src="/wedding-couple.png"
+                src="/wedding-couple.jpg"
                 width={520}
                 height={711}
               />
@@ -217,7 +217,7 @@ export default function HeroSection() {
               <Image
                 alt=""
                 className="block max-w-none size-full"
-                src="/wedding-couple-blurred.png"
+                src="/wedding-couple-blurred.jpg"
                 width={520}
                 height={582}
               />
@@ -227,7 +227,7 @@ export default function HeroSection() {
             <Image
               alt="Wedding couple in Paris"
               className="block max-w-none size-full"
-              src="/wedding-couple-mobile.png"
+              src="/wedding-couple-mobile.jpg"
               width={400}
               height={462}
             />
