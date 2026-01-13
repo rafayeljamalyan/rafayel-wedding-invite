@@ -10,7 +10,7 @@ export default function DetailsSection() {
             <Image
               alt="St. Gevorg Church"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/church-image.png"
+              src="/church-image.jpg"
               width={640}
               height={720}
             />
@@ -53,7 +53,7 @@ export default function DetailsSection() {
             <Image
               alt="St. Gevorg Church"
               className="absolute h-full left-0 max-w-none w-full object-cover"
-              src="/church-image.png"
+              src="/church-image.jpg"
               width={640}
               height={720}
             />
@@ -123,7 +123,7 @@ export default function DetailsSection() {
               <Image
                 alt=""
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/church-image.png"
+                src="/church-image.jpg"
                 width={640}
                 height={720}
               />
@@ -134,7 +134,7 @@ export default function DetailsSection() {
               <Image
                 alt="St. Gevorg Church"
                 className="absolute h-full left-0 max-w-none w-full object-cover"
-                src="/church-image.png"
+                src="/church-image.jpg"
                 width={520}
                 height={600}
               />
@@ -177,7 +177,7 @@ export default function DetailsSection() {
               <Image
                 alt=""
                 className="block max-w-none size-full object-cover"
-                src="/church-image-blurred.png"
+                src="/church-image-blurred.jpg"
                 width={520}
                 height={582}
               />
@@ -187,7 +187,7 @@ export default function DetailsSection() {
             <Image
               alt="St. Gevorg Church"
               className="block max-w-none size-full object-cover"
-              src="/church-image-mobile.png"
+              src="/church-image-mobile.jpg"
               width={400}
               height={462}
             />
