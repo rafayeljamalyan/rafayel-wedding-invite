@@ -1,6 +1,32 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  staggerContainer,
+  fadeInUp,
+  fadeInUpMobile,
+} from "@/lib/animations/animation-variants";
+import { EASING, DURATION } from "@/lib/animations/animation-config";
+import { useScrollAnimation, useIsMobile } from "@/lib/animations/hooks";
 
 export default function ScheduleSection() {
+  const isMobile = useIsMobile();
+
+  // Desktop Large refs
+  const { ref: refDesktopLarge, isInView: isInViewDesktopLarge } =
+    useScrollAnimation();
+
+  // Desktop Medium refs
+  const { ref: refDesktopMedium, isInView: isInViewDesktopMedium } =
+    useScrollAnimation();
+
+  // Tablet refs
+  const { ref: refTablet, isInView: isInViewTablet } = useScrollAnimation();
+
+  // Mobile refs
+  const { ref: refMobile, isInView: isInViewMobile } = useScrollAnimation();
+
   return (
     <div className="relative w-full bg-white">
       {/* Desktop Large (1920-1561px and 1920+) */}
@@ -17,13 +43,35 @@ export default function ScheduleSection() {
           </div>
         </div>
         <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
-          <div className="basis-0 bg-white flex flex-col gap-[80px] grow h-full items-start justify-center min-h-px min-w-px pl-[120px] pr-[160px] py-[80px] relative shrink-0">
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+          <motion.div
+            ref={refDesktopLarge}
+            variants={staggerContainer}
+            initial="hidden"
+            animate={isInViewDesktopLarge ? "visible" : "hidden"}
+            className="basis-0 bg-white flex flex-col gap-[80px] grow h-full items-start justify-center min-h-px min-w-px pl-[120px] pr-[160px] py-[80px] relative shrink-0"
+          >
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#332d27] text-[28px] w-full">
                 Ամուսնության պաշտոնական գրանցում և գինու հյուրասիրություն`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopLarge ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.2,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -31,18 +79,34 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 17:00
               </p>
-            </div>
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#332d27] text-[28px] w-full">
                 Ընթրիք ու լիիիքը պար`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopLarge ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.4,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -50,18 +114,34 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 18:00
               </p>
-            </div>
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#332d27] text-[28px] w-full">
                 Թռչող լապտերների արարողությում`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopLarge ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.6,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -69,13 +149,13 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 21:00
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
@@ -93,13 +173,35 @@ export default function ScheduleSection() {
           </div>
         </div>
         <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
-          <div className="basis-0 bg-white flex flex-col gap-[80px] grow h-full items-start justify-center min-h-px min-w-px p-[80px] relative shrink-0">
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+          <motion.div
+            ref={refDesktopMedium}
+            variants={staggerContainer}
+            initial="hidden"
+            animate={isInViewDesktopMedium ? "visible" : "hidden"}
+            className="basis-0 bg-white flex flex-col gap-[80px] grow h-full items-start justify-center min-h-px min-w-px p-[80px] relative shrink-0"
+          >
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] not-italic relative shrink-0 text-[#332d27] text-[24px] w-full">
                 Ամուսնության պաշտոնական գրանցում և գինու հյուրասիրություն`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopMedium ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.2,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -107,18 +209,34 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 17:00
               </p>
-            </div>
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] not-italic relative shrink-0 text-[#332d27] text-[24px] w-full">
                 Ընթրիք ու լիիիքը պար`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopMedium ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.4,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -126,18 +244,34 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 18:00
               </p>
-            </div>
-            <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              custom={{ duration: DURATION.medium }}
+              className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+            >
               <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] not-italic relative shrink-0 text-[#332d27] text-[24px] w-full">
                 Թռչող լապտերների արարողությում`
               </p>
               <div className="h-0 relative shrink-0 w-full">
-                <div className="absolute inset-[-1px_0_0_0]">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={
+                    isInViewDesktopMedium ? { scaleX: 1 } : { scaleX: 0 }
+                  }
+                  transition={{
+                    duration: DURATION.medium,
+                    ease: EASING.smooth,
+                    delay: 0.6,
+                  }}
+                  style={{ originX: 0 }}
+                  className="absolute inset-[-1px_0_0_0]"
+                >
                   <Image
                     alt=""
                     className="block max-w-none size-full"
@@ -145,25 +279,45 @@ export default function ScheduleSection() {
                     width={100}
                     height={1}
                   />
-                </div>
+                </motion.div>
               </div>
               <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
                 21:00
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
       {/* Tablet (1200-769px) */}
       <div className="hidden min-[769px]:flex min-[1201px]:hidden flex-col items-start w-full">
-        <div className="bg-white flex flex-col gap-[64px] items-start justify-center px-[40px] py-[80px] relative shrink-0 w-full">
-          <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+        <motion.div
+          ref={refTablet}
+          variants={staggerContainer}
+          initial="hidden"
+          animate={isInViewTablet ? "visible" : "hidden"}
+          className="bg-white flex flex-col gap-[64px] items-start justify-center px-[40px] py-[80px] relative shrink-0 w-full"
+        >
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.medium }}
+            className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Ամուսնության պաշտոնական գրանցում և գինու հյուրասիրություն`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewTablet ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.medium,
+                  ease: EASING.smooth,
+                  delay: 0.2,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -171,18 +325,32 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
               17:00
             </p>
-          </div>
-          <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+          </motion.div>
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.medium }}
+            className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Ընթրիք ու լիիիքը պար`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewTablet ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.medium,
+                  ease: EASING.smooth,
+                  delay: 0.4,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -190,18 +358,32 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
               18:00
             </p>
-          </div>
-          <div className="flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+          </motion.div>
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.medium }}
+            className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Թռչող լապտերների արարողությում`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewTablet ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.medium,
+                  ease: EASING.smooth,
+                  delay: 0.6,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -209,13 +391,13 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[44px] not-italic relative shrink-0 text-[#110c09] text-[40px] w-full">
               21:00
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="h-[600px] overflow-clip relative shrink-0 w-full">
           <div className="absolute blur-[20px] filter inset-[-20px]">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -244,13 +426,33 @@ export default function ScheduleSection() {
 
       {/* Mobile (768-375px and 374px-) */}
       <div className="flex min-[769px]:hidden flex-col items-start w-full">
-        <div className="bg-white flex flex-col gap-[48px] items-start justify-center px-[20px] py-[64px] relative shrink-0 w-full">
-          <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
+        <motion.div
+          ref={refMobile}
+          variants={staggerContainer}
+          initial="hidden"
+          animate={isInViewMobile ? "visible" : "hidden"}
+          className="bg-white flex flex-col gap-[48px] items-start justify-center px-[20px] py-[64px] relative shrink-0 w-full"
+        >
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.fast }}
+            className="flex flex-col gap-[16px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Ամուսնության պաշտոնական գրանցում և գինու հյուրասիրություն`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewMobile ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.fast,
+                  ease: EASING.smooth,
+                  delay: 0.15,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -258,18 +460,32 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#110c09] text-[28px] w-full">
               17:00
             </p>
-          </div>
-          <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
+          </motion.div>
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.fast }}
+            className="flex flex-col gap-[16px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Ընթրիք ու լիիիքը պար`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewMobile ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.fast,
+                  ease: EASING.smooth,
+                  delay: 0.3,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -277,18 +493,32 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#110c09] text-[28px] w-full">
               18:00
             </p>
-          </div>
-          <div className="flex flex-col gap-[16px] items-start relative shrink-0 w-full">
+          </motion.div>
+          <motion.div
+            variants={fadeInUpMobile}
+            custom={{ duration: DURATION.fast }}
+            className="flex flex-col gap-[16px] items-start relative shrink-0 w-full"
+          >
             <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#332d27] text-[20px] w-full">
               Թռչող լապտերների արարողությում`
             </p>
             <div className="h-0 relative shrink-0 w-full">
-              <div className="absolute inset-[-1px_0_0_0]">
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={isInViewMobile ? { scaleX: 1 } : { scaleX: 0 }}
+                transition={{
+                  duration: DURATION.fast,
+                  ease: EASING.smooth,
+                  delay: 0.45,
+                }}
+                style={{ originX: 0 }}
+                className="absolute inset-[-1px_0_0_0]"
+              >
                 <Image
                   alt=""
                   className="block max-w-none size-full"
@@ -296,13 +526,13 @@ export default function ScheduleSection() {
                   width={100}
                   height={1}
                 />
-              </div>
+              </motion.div>
             </div>
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] not-italic relative shrink-0 text-[#110c09] text-[28px] w-full">
               21:00
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="h-[462px] overflow-clip relative shrink-0 w-full">
           <div className="absolute blur-[20px] filter inset-[-20px]">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">

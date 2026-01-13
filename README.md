@@ -2,6 +2,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Environment Setup
+
+Create a `.env.local` file with the following variables:
+
+```bash
+# Google Sheets API Configuration
+GOOGLE_SHEETS_PRIVATE_KEY="your-private-key-here"
+GOOGLE_SHEETS_CLIENT_EMAIL="your-service-account-email@project.iam.gserviceaccount.com"
+GOOGLE_SHEET_ID="your-spreadsheet-id"
+GOOGLE_SHEET_RANGE="Sheet1!A:C"  # Optional, defaults to "Sheet1!A:C"
+```
+
+**Important:** Make sure your Google Spreadsheet has a sheet named "Sheet1" (or whatever you specify in `GOOGLE_SHEET_RANGE`). The default sheet in new Google Sheets is typically "Sheet1". If you want to use a different sheet name like "Responses", either:
+1. Rename your sheet in Google Sheets, OR
+2. Set `GOOGLE_SHEET_RANGE=Responses!A:C` in your `.env.local`
+
+### Running the Development Server
+
 First, run the development server:
 
 ```bash
