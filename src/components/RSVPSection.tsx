@@ -91,10 +91,10 @@ export default function RSVPSection() {
                 className="flex flex-col gap-[24px] items-center w-full"
               >
                 <div className="text-[#2d5016] text-center">
-                  <p className="font-['Arti_v05:Regular',sans-serif] text-[24px] min-[1201px]:text-[28px] leading-[32px] min-[1201px]:leading-[36px] mb-[12px]">
+                  <p className="font-['OptimaModoki:Regular',sans-serif] text-[24px] min-[1201px]:text-[28px] leading-[32px] min-[1201px]:leading-[36px] mb-[12px]">
                     ✓ Շնորհակալություն!
                   </p>
-                  <p className="font-['Arti_v05:Regular',sans-serif] text-[18px] min-[1201px]:text-[20px] leading-[24px] min-[1201px]:leading-[28px]">
+                  <p className="font-['OptimaModoki:Regular',sans-serif] text-[18px] min-[1201px]:text-[20px] leading-[24px] min-[1201px]:leading-[28px]">
                     Ձեր RSVP-ն հաջողությամբ ուղարկվել է։ Կտեսնվենք մարտի 28-ին։
                   </p>
                 </div>
@@ -108,7 +108,7 @@ export default function RSVPSection() {
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-[24px] min-[1201px]:gap-[40px] items-end w-full"
               >
-                <p className="font-['Arti_v05:Regular',sans-serif] leading-[24px] min-[1201px]:leading-[28px] min-[1561px]:leading-[36px] not-italic relative shrink-0 text-[#332d27] text-[20px] min-[1201px]:text-[24px] min-[1561px]:text-[28px] w-full">
+                <p className="font-['OptimaModoki:Regular',sans-serif] leading-[24px] min-[1201px]:leading-[28px] min-[1561px]:leading-[36px] not-italic relative shrink-0 text-[#332d27] text-[20px] min-[1201px]:text-[24px] min-[1561px]:text-[28px] w-full">
                   Խնդրում ենք ստորև մուտքագրել Ձեր անունը և ազգանունը, ինչպես նաև նշել անդամների քանակը՝ մասնակցությունը հաստատելու համար։
                 </p>
                 <div className="flex flex-col gap-[24px] items-start relative shrink-0 w-full">
@@ -123,7 +123,7 @@ export default function RSVPSection() {
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Անուն ազգանուն"
                       disabled={isSubmitting}
-                      className="flex-1 font-['Arti_v05:Regular',sans-serif] leading-[20px] min-[1201px]:leading-[24px] not-italic text-[#6b6b6b] text-[18px] min-[1201px]:text-[20px] bg-transparent outline-none placeholder:text-[#6b6b6b] disabled:opacity-50"
+                      className="flex-1 font-['OptimaModoki:Regular',sans-serif] leading-[20px] min-[1201px]:leading-[24px] not-italic text-[#6b6b6b] text-[18px] min-[1201px]:text-[20px] bg-transparent outline-none placeholder:text-[#6b6b6b] disabled:opacity-50"
                     />
                   </motion.div>
                   <motion.div
@@ -139,7 +139,7 @@ export default function RSVPSection() {
                       disabled={isSubmitting}
                       min="1"
                       max="20"
-                      className="flex-1 font-['Arti_v05:Regular',sans-serif] leading-[20px] min-[1201px]:leading-[24px] not-italic text-[#6b6b6b] text-[18px] min-[1201px]:text-[20px] bg-transparent outline-none placeholder:text-[#6b6b6b] disabled:opacity-50"
+                      className="flex-1 font-['OptimaModoki:Regular',sans-serif] leading-[20px] min-[1201px]:leading-[24px] not-italic text-[#6b6b6b] text-[18px] min-[1201px]:text-[20px] bg-transparent outline-none placeholder:text-[#6b6b6b] disabled:opacity-50"
                     />
                   </motion.div>
                 </div>
@@ -150,7 +150,7 @@ export default function RSVPSection() {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="font-['Arti_v05:Regular',sans-serif] text-[16px] text-[#c41e3a] w-full text-right"
+                      className="font-['OptimaModoki:Regular',sans-serif] text-[16px] text-[#c41e3a] w-full text-right"
                     >
                       {errorMessage}
                     </motion.p>

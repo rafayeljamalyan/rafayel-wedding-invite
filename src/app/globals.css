@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'Arti_v05:Regular';
-  src: local('Noto Sans Armenian'), local('Arial Unicode MS'), local('Arial');
+  src: url('/ArtiRegular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

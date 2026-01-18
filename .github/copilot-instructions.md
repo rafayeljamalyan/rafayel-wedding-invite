@@ -58,7 +58,7 @@ const { ref, isInView } = useScrollAnimation();
 
 ### Tailwind CSS 4
 - **Path aliases**: Use `@/` for imports (configured in [tsconfig.json](../tsconfig.json))
-- **Custom fonts**: `font-['OptimaModoki:Regular',sans-serif]` for headings, `font-['Arti_v05:Regular',sans-serif]` for body (declared in [globals.css](../src/app/globals.css))
+- **Custom fonts**: `font-['OptimaModoki:Regular',sans-serif]` for headings, `font-['OptimaModoki:Regular',sans-serif]` for body (declared in [globals.css](../src/app/globals.css))
 - **Responsive breakpoints**: `md:` (768px), `min-[1201px]:` (1201px), `min-[1561px]:` (1561px)
 - **Color palette**: Whites (`#f5f4f1`, `#ffffff`), greens (`#2d5016`), browns (`#110c09`)
 
