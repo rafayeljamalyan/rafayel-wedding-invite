@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeInUp, fadeInUpMobile } from "@/lib/animations/animation-variants";
+import { staggerContainer, fadeInUp, fadeInUpMobile, imageReveal } from "@/lib/animations/animation-variants";
 import { EASING, DURATION } from "@/lib/animations/animation-config";
 import { useScrollAnimation, useIsMobile } from "@/lib/animations/hooks";
 
@@ -14,13 +14,19 @@ export default function DetailsSection() {
   const { ref: refDesktopLarge, isInView: isInViewDesktopLarge } = useScrollAnimation();
   const { ref: refDesktopMedium, isInView: isInViewDesktopMedium } = useScrollAnimation();
   const { ref: refTablet, isInView: isInViewTablet } = useScrollAnimation();
-  const { ref: refMobile, isInView: isInViewMobile } = useScrollAnimation();
+  const { ref: refMobile, isInView: isInViewMobile } = useScrollAnimation({ amount: 0.1, margin: "0px" });
 
   return (
     <div className="relative w-full bg-white">
       {/* Desktop Large (1920-1561px and 1920+) */}
       <div className="hidden min-[1561px]:flex items-center gap-[120px] bg-[#f5f4f1] px-[200px] py-[120px] w-full">
-        <div className="h-[720px] relative shrink-0 w-[640px]">
+        <motion.div
+          className="h-[720px] relative shrink-0 w-[640px]"
+          initial="hidden"
+          animate={isInViewDesktopLarge ? "visible" : "hidden"}
+          variants={imageReveal}
+          transition={{ duration: DURATION.medium, ease: EASING.smooth }}
+        >
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <Image
               alt="St. Gevorg Church"
@@ -30,7 +36,7 @@ export default function DetailsSection() {
               height={720}
             />
           </div>
-        </div>
+        </motion.div>
         <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
           <motion.div
             ref={refDesktopLarge}
@@ -132,7 +138,13 @@ export default function DetailsSection() {
 
       {/* Desktop Medium (1560-1201px) */}
       <div className="hidden min-[1201px]:flex min-[1561px]:hidden items-center gap-[80px] bg-[#f5f4f1] px-[120px] py-[100px] w-full">
-        <div className="h-[720px] relative shrink-0 w-[640px]">
+        <motion.div
+          className="h-[720px] relative shrink-0 w-[640px]"
+          initial="hidden"
+          animate={isInViewDesktopMedium ? "visible" : "hidden"}
+          variants={imageReveal}
+          transition={{ duration: DURATION.medium, ease: EASING.smooth }}
+        >
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <Image
               alt="St. Gevorg Church"
@@ -142,7 +154,7 @@ export default function DetailsSection() {
               height={720}
             />
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-1 items-center self-stretch">
           <motion.div
             ref={refDesktopMedium}
@@ -215,7 +227,13 @@ export default function DetailsSection() {
           animate={isInViewTablet ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <div className="h-[600px] max-w-[640px] relative shrink-0 w-full">
+          <motion.div
+            className="h-[600px] max-w-[640px] relative shrink-0 w-full"
+            initial="hidden"
+            animate={isInViewTablet ? "visible" : "hidden"}
+            variants={imageReveal}
+            transition={{ duration: DURATION.medium * 0.8, ease: EASING.smooth }}
+          >
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <Image
                 alt="St. Gevorg Church"
@@ -225,7 +243,7 @@ export default function DetailsSection() {
                 height={600}
               />
             </div>
-          </div>
+          </motion.div>
           <motion.div
             className="flex flex-col gap-[64px] items-start justify-center relative shrink-0 w-full"
             variants={staggerContainer}
@@ -294,7 +312,13 @@ export default function DetailsSection() {
           animate={isInViewMobile ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <div className="h-[400px] max-w-[640px] relative shrink-0 w-full">
+          <motion.div
+            className="h-[400px] max-w-[640px] relative shrink-0 w-full"
+            initial="hidden"
+            animate={isInViewMobile ? "visible" : "hidden"}
+            variants={imageReveal}
+            transition={{ duration: DURATION.medium * 0.8, ease: EASING.smooth }}
+          >
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <Image
                 alt="St. Gevorg Church"
@@ -304,7 +328,7 @@ export default function DetailsSection() {
                 height={400}
               />
             </div>
-          </div>
+          </motion.div>
           <motion.div
             className="flex flex-col gap-[64px] items-start justify-center relative shrink-0 w-full"
             variants={staggerContainer}

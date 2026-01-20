@@ -1,26 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { scaleIn, fadeInUp, fadeInUpMobile } from "@/lib/animations/animation-variants";
 import { EASING } from "@/lib/animations/animation-config";
-import { useIsMobile } from "@/lib/animations/hooks";
+import { useIsMobile, useScrollParallax } from "@/lib/animations/hooks";
 
 export default function HeroSection() {
   const isMobile = useIsMobile();
+  const shouldReduceMotion = useReducedMotion();
+  const { y } = useScrollParallax(16);
+  const parallaxY = shouldReduceMotion || isMobile ? 0 : y;
   const fadeVariant = isMobile ? fadeInUpMobile : fadeInUp;
 
   return (
-    <div className="relative size-full bg-white">
+    <div className="relative w-full bg-white">
       {/* Desktop Large (1920-1561px and 1920+) */}
-      <div className="hidden min-[1561px]:flex items-center relative size-full overflow-hidden">
-        <Image
-          alt="Wedding couple in Paris"
-          className="object-cover grayscale blur-[2px]"
-          fill
-          priority
-          src="/wedding-couple.jpg"
-        />
+      <div className="hidden min-[1561px]:flex h-screen items-center relative size-full overflow-hidden">
+        <motion.div className="absolute inset-0" style={{ y: parallaxY }}>
+          <Image
+            alt="Wedding couple in Paris"
+            className="object-cover grayscale blur-[2px]"
+            fill
+            priority
+            src="/wedding-couple.jpg"
+          />
+        </motion.div>
         <div className="absolute inset-0 bg-[rgba(17,12,9,0.3)]" />
         <div className="relative z-10 flex flex-col gap-[40px] items-start justify-center pb-[80px] pt-[200px] px-[120px] w-full">
           <motion.div
@@ -79,14 +84,16 @@ export default function HeroSection() {
       </div>
 
       {/* Desktop Medium (1560-1201px) */}
-      <div className="hidden min-[1201px]:flex min-[1561px]:hidden items-center relative size-full overflow-hidden">
-        <Image
-          alt="Wedding couple in Paris"
-          className="object-cover grayscale blur-[2px]"
-          fill
-          priority
-          src="/wedding-couple.jpg"
-        />
+      <div className="hidden min-[1201px]:flex h-screen min-[1561px]:hidden items-center relative size-full overflow-hidden">
+        <motion.div className="absolute inset-0" style={{ y: parallaxY }}>
+          <Image
+            alt="Wedding couple in Paris"
+            className="object-cover grayscale blur-[2px]"
+            fill
+            priority
+            src="/wedding-couple.jpg"
+          />
+        </motion.div>
         <div className="absolute inset-0 bg-[rgba(17,12,9,0.3)]" />
         <div className="relative z-10 flex flex-col gap-[40px] items-start justify-center pb-[80px] pt-[200px] px-[120px] w-full">
           <motion.div
@@ -146,13 +153,15 @@ export default function HeroSection() {
 
       {/* Tablet (1200-769px) */}
       <div className="hidden min-[769px]:flex min-[1201px]:hidden items-center relative size-full overflow-hidden">
-        <Image
-          alt="Wedding couple in Paris"
-          className="object-cover grayscale blur-[2px]"
-          fill
-          priority
-          src="/wedding-couple.jpg"
-        />
+        <motion.div className="absolute inset-0" style={{ y: parallaxY }}>
+          <Image
+            alt="Wedding couple in Paris"
+            className="object-cover grayscale blur-[2px]"
+            fill
+            priority
+            src="/wedding-couple.jpg"
+          />
+        </motion.div>
         <div className="absolute inset-0 bg-[rgba(17,12,9,0.3)]" />
         <div className="relative z-10 flex flex-col gap-[24px] items-start justify-center pb-[80px] pt-[200px] px-[40px] w-full">
           <motion.div
@@ -213,13 +222,15 @@ export default function HeroSection() {
       {/* Mobile (768-375px and 374px-) */}
       <div className="flex min-[769px]:hidden flex-col items-start size-full">
         <div className="relative flex flex-col gap-[24px] items-start justify-center pb-[80px] pt-[200px] px-[20px] w-full">
-          <Image
-            alt="Wedding couple in Paris"
-            className="absolute inset-0 object-cover"
-            fill
-            priority
-            src="/wedding-couple.jpg"
-          />
+          <motion.div className="absolute inset-0" style={{ y: parallaxY }}>
+            <Image
+              alt="Wedding couple in Paris"
+              className="absolute inset-0 object-cover"
+              fill
+              priority
+              src="/wedding-couple.jpg"
+            />
+          </motion.div>
           <div className="absolute inset-0 bg-[rgba(17,12,9,0.3)]" />
           <motion.div
             className="relative shrink-0 size-[120px]"

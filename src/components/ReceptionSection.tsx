@@ -63,9 +63,14 @@ export default function ReceptionSection() {
                 <p className="mb-0">Ոսկեվազ գինու գործարան</p>
                 <p>(Voskevaz winery)</p>
               </div>
-              <p className="font-['Arti_v05:Regular',sans-serif] leading-[36px] relative shrink-0 text-[28px] w-full">
+              <a
+                href="https://yandex.com/maps/-/CLtIBWoD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['Arti_v05:Regular',sans-serif] leading-[36px] relative shrink-0 text-[28px] underline w-full"
+              >
                 Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
-              </p>
+              </a>
             </div>
           </motion.div>
         </motion.div>
@@ -102,9 +107,14 @@ export default function ReceptionSection() {
               <p className="mb-0">Ոսկեվազ գինու գործարան</p>
               <p>(Voskevaz winery)</p>
             </div>
-            <p className="font-['Arti_v05:Regular',sans-serif] leading-[36px] relative shrink-0 text-[28px] w-full">
+            <a
+              href="https://yandex.com/maps/-/CLtIBWoD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-['Arti_v05:Regular',sans-serif] leading-[36px] relative shrink-0 text-[28px] underline w-full"
+            >
               Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
-            </p>
+            </a>
           </div>
         </motion.div>
       </div>
@@ -141,9 +151,14 @@ export default function ReceptionSection() {
                 <p className="mb-0">Ոսկեվազ գինու գործարան</p>
                 <p>(Voskevaz winery)</p>
               </div>
-              <p className="font-['Arti_v05:Regular',sans-serif] leading-[32px] relative shrink-0 text-[24px] w-full">
+              <a
+                href="https://yandex.com/maps/-/CLtIBWoD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['Arti_v05:Regular',sans-serif] leading-[32px] relative shrink-0 text-[24px] underline w-full"
+              >
                 Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
-              </p>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -181,9 +196,14 @@ export default function ReceptionSection() {
                 <p className="mb-0">Ոսկեվազ գինու գործարան</p>
                 <p>(Voskevaz winery)</p>
               </div>
-              <p className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[20px] w-full">
+              <a
+                href="https://yandex.com/maps/-/CLtIBWoD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['Arti_v05:Regular',sans-serif] leading-[28px] relative shrink-0 text-[20px] underline w-full"
+              >
                 Հայաստան, 0220, Արագածոտնի մարզ, Ոսկեվազ գյուղ
-              </p>
+              </a>
             </div>
           </div>
         </motion.div>

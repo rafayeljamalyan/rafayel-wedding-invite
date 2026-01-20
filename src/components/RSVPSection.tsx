@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, FormEvent } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { submitRSVP } from "@/app/actions/submitRSVP";
 import { scaleIn } from "@/lib/animations/animation-variants";
 import { EASING, DURATION } from "@/lib/animations/animation-config";
@@ -15,6 +15,7 @@ export default function RSVPSection() {
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const { ref, isInView } = useScrollAnimation();
+  const shouldReduceMotion = useReducedMotion();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -61,8 +62,8 @@ export default function RSVPSection() {
       <div className="flex flex-col gap-[10px] items-center justify-center px-[20px] md:px-[40px] min-[1201px]:px-[80px] py-[64px] md:py-[120px] min-[1201px]:py-[160px] relative size-full">
         <motion.div
           className="absolute inset-0 pointer-events-none"
-          animate={{ scale: [1.0, 1.1] }}
-          transition={{ duration: 20, ease: "linear" }}
+          animate={shouldReduceMotion ? { scale: 1 } : { scale: [1.0, 1.1] }}
+          transition={shouldReduceMotion ? { duration: 0.01 } : { duration: 20, ease: "linear" }}
         >
           <Image
             alt=""
@@ -161,8 +162,8 @@ export default function RSVPSection() {
                   disabled={isSubmitting}
                   whileHover={!isSubmitting ? { scale: 1.05, boxShadow: "0 4px 12px rgba(0,0,0,0.15)" } : {}}
                   whileTap={!isSubmitting ? { scale: 0.98 } : {}}
-                  animate={isSubmitting ? { scale: [1, 1.02, 1] } : {}}
-                  transition={isSubmitting ? { duration: 1.5, repeat: Infinity, ease: "easeInOut" } : { duration: 0.2 }}
+                  animate={!shouldReduceMotion && isSubmitting ? { scale: [1, 1.02, 1] } : {}}
+                  transition={!shouldReduceMotion && isSubmitting ? { duration: 1.5, repeat: Infinity, ease: "easeInOut" } : { duration: 0.2 }}
                   className="bg-[#110c09] flex items-center justify-center pb-[16px] pt-[14px] px-[40px] relative shrink-0 w-full md:w-auto md:self-end disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <p className="font-['OptimaModoki:Regular',sans-serif] leading-[24px] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap">

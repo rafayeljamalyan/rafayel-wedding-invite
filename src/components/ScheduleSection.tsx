@@ -40,7 +40,7 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="relative shrink-0 size-[120px]"
           >
             <Image
@@ -53,7 +53,7 @@ export default function ScheduleSection() {
           </motion.div>
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
           >
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] not-italic relative shrink-0 text-[#110c09] text-[40px] text-center w-full">
@@ -89,7 +89,7 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="relative shrink-0 size-[120px]"
           >
             <Image
@@ -102,7 +102,7 @@ export default function ScheduleSection() {
           </motion.div>
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
           >
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] not-italic relative shrink-0 text-[#110c09] text-[40px] text-center w-full">
@@ -143,14 +143,14 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="relative shrink-0 size-[120px]"
           >
             <Image alt="" className="block max-w-none size-full" src="/wine.svg" width={120} height={120} />
           </motion.div>
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
           >
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] not-italic relative shrink-0 text-[#110c09] text-[40px] text-center w-full">
@@ -174,14 +174,14 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="relative shrink-0 size-[120px]"
           >
             <Image alt="" className="block max-w-none size-full" src="/dinner.svg" width={120} height={120} />
           </motion.div>
           <motion.div
             variants={fadeInUp}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[20px] items-start relative shrink-0 w-full"
           >
             <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] not-italic relative shrink-0 text-[#110c09] text-[40px] text-center w-full">
@@ -210,7 +210,7 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUpMobile}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[32px] items-center max-w-[720px] relative shrink-0 w-full"
           >
             <div className="relative shrink-0 size-[100px]">
@@ -248,7 +248,7 @@ export default function ScheduleSection() {
           </motion.div>
           <motion.div
             variants={fadeInUpMobile}
-            custom={{ duration: DURATION.medium }}
+            transition={{ duration: DURATION.medium, ease: EASING.smooth }}
             className="flex flex-col gap-[32px] items-center max-w-[720px] relative shrink-0 w-full"
           >
             <div className="relative shrink-0 size-[100px]">
@@ -298,7 +298,7 @@ export default function ScheduleSection() {
         >
           <motion.div
             variants={fadeInUpMobile}
-            custom={{ duration: DURATION.fast }}
+            transition={{ duration: DURATION.fast, ease: EASING.smooth }}
             className="flex flex-col gap-[32px] items-center max-w-[720px] relative shrink-0 w-full"
           >
             <div className="relative shrink-0 size-[100px]">
@@ -320,7 +320,7 @@ export default function ScheduleSection() {
           </motion.div>
           <motion.div
             variants={fadeInUpMobile}
-            custom={{ duration: DURATION.fast }}
+            transition={{ duration: DURATION.fast, ease: EASING.smooth }}
             className="flex flex-col gap-[32px] items-center max-w-[720px] relative shrink-0 w-full"
           >
             <div className="relative shrink-0 size-[100px]">

@@ -11,6 +11,11 @@ export const fadeInUp: Variants = {
   visible: { opacity: 1, y: 0 }
 };
 
+export const fadeInUpSoft: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export const fadeInUpMobile: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
@@ -42,6 +47,18 @@ export const slideInFromRight: Variants = {
 export const drawPath: Variants = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: { pathLength: 1, opacity: 1 }
+};
+
+// Line draw (scaleX)
+export const lineDraw: Variants = {
+  hidden: { scaleX: 0 },
+  visible: { scaleX: 1 }
+};
+
+// Image reveal (opacity + scale)
+export const imageReveal: Variants = {
+  hidden: { opacity: 0, scale: 1.03 },
+  visible: { opacity: 1, scale: 1 }
 };
 
 // Stagger container
