@@ -24,7 +24,6 @@ export function useScrollAnimation(options = {}) {
   const isInView = useInView(ref, {
     once: VIEWPORT.once,
     amount: VIEWPORT.amount,
-    margin: VIEWPORT.margin,
     ...options
   });
 
