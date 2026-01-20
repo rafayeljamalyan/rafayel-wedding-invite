@@ -128,9 +128,14 @@ export default function DetailsSection() {
                   />
                 </motion.div>
               </div>
-              <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] relative shrink-0 text-[#110c09] text-[40px] w-full">
+              <a
+                href="https://yandex.com/maps/-/CLtIR-zN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] relative shrink-0 text-[#110c09] text-[40px] underline w-full"
+              >
                 Սուրբ Գևորգ Եկեղեցի, Մուղնի
-              </p>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -210,9 +215,14 @@ export default function DetailsSection() {
                   <Image alt="" className="block max-w-none size-full" src="/separator-medium.svg" width={100} height={1} />
                 </div>
               </div>
-              <p className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] relative shrink-0 text-[#110c09] text-[40px] w-full">
+              <a
+                href="https://yandex.com/maps/-/CLtIR-zN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['OptimaModoki:Regular',sans-serif] leading-[48px] relative shrink-0 text-[#110c09] text-[40px] underline w-full"
+              >
                 Սուրբ Գևորգ Եկեղեցի, Մուղնի
-              </p>
+              </a>
             </motion.div>
           </motion.div>
         </div>
@@ -295,9 +305,14 @@ export default function DetailsSection() {
                   <Image alt="" className="block max-w-none size-full" src="/separator-tablet.svg" width={100} height={1} />
                 </div>
               </div>
-              <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] min-w-full relative shrink-0 text-[#110c09] text-[30px] w-[min-content]">
+              <a
+                href="https://yandex.com/maps/-/CLtIR-zN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] min-w-full relative shrink-0 text-[#110c09] text-[30px] underline w-[min-content]"
+              >
                 Սուրբ Գևորգ եկեղեցի, Մուղնի
-              </p>
+              </a>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -380,9 +395,14 @@ export default function DetailsSection() {
                   <Image alt="" className="block max-w-none size-full" src="/separator-mobile.svg" width={100} height={1} />
                 </div>
               </div>
-              <p className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] min-w-full relative shrink-0 text-[#110c09] text-[30px] w-[min-content]">
+              <a
+                href="https://yandex.com/maps/-/CLtIR-zN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-['OptimaModoki:Regular',sans-serif] leading-[36px] min-w-full relative shrink-0 text-[#110c09] text-[30px] underline w-[min-content]"
+              >
                 Սուրբ Գևորգ եկեղեցի, Մուղնի
-              </p>
+              </a>
             </motion.div>
           </motion.div>
         </motion.div>
